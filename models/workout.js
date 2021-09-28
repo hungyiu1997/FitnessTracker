@@ -45,6 +45,9 @@ const workoutSchema = new Schema(
         },
         sets: {
           // TODO: For the schema of this attribute, define type as number
+          type: Number,
+          trim: true,
+          required: 'Please enter the number of sets for your exercises',
         },
         distance: {
           // TODO: For the schema of this attribute, define type as number
