@@ -14,20 +14,28 @@ const workoutSchema = new Schema(
       {
         type: {
           // TODO: For the schema of this attribute, define type and trim and required
+          // required is a message for the user to see
           type: String,
           trim: true,
-          required: true,
+          required: 'Please select a type of workout',
         },
         name: {
           // TODO: For the schema of this attribute, define type and trim and required
           type: String,
-          
+          trim: true,
+          required: 'Please enter the name of your workout',
         },
         duration: {
           // TODO: For the schema of this attribute, define type as number and its required
+          type: Number,
+          trim: true,
+          required: 'Please enter the duration of your workout',
         },
         weight: {
           // TODO: For the schema of this attribute, define type as number
+          type: Number,
+          trim: true,
+          required: 'Please enter your weight',
         },
         reps: {
           // TODO: For the schema of this attribute, define type as number
